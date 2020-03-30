@@ -22,7 +22,10 @@ $(document).ready(function(){
 
         })
         console.log(newList);
-        
+        $("#groceryList").append("<li>" + newList[0] + "</li>");
+        $("#groceryList").append("<li>" + newList[1] + "</li>");
+        $("#groceryList").append("<li>" + newList[2] + "</li>");
+        $("#groceryList").append("<li>" + newList[3] + "</li>");
        
 
 
