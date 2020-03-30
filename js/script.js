@@ -1,19 +1,39 @@
 $(document).ready(function(){
 
+   
+
+
+
     $("#list").submit(function(event) {
 
         event.preventDefault();
 
 
 
-        var listArray = [($("input#one").val()) , ($("input#two").val()) , ($("input#two").val()) , ($("input#two").val())   ]
-
-        console.log(listArray);
-
-
+        var listArrays = [($("input#one").val()) , ($("input#two").val()) , ($("input#three").val()) , ($("input#four").val()) ]
+        listArrays.sort();
+        
 
 
+        $("#list").hide();
+
+        var newList = listArrays.map(function(listArray){
+            return listArray.toUpperCase()
+
+        })
+        console.log(newList);
+        
+       
+
+
+
+        
+
+
+
+        $("#list").hide();
     })
+   
 
 
 
